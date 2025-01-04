@@ -5,8 +5,8 @@
     "region": "Bagmati",
     "rating": 4.5,
     "images": ["/images/Kath.png",
-     "/images/kath2.png",
-    "/images/kath3.png"],
+     "/images/kath2.jpeg",
+    "/images/kath3.jpg"],
     "description": "Kathmandu, the capital of Nepal, is a vibrant city known for its cultural heritage, ancient temples, and bustling streets. It's a gateway to the Himalayas and a treasure trove of history and culture."
   },
   {
@@ -198,8 +198,8 @@
     "region": "Province No. 1",
     "rating": 4.5,
     "images": ["/images/Kho1.jpeg",
-    "/images/kho1.jpeg",
-   "/images/kho2.jpg"],
+    "/images/kho2.jpg",
+   "/images/Kho3.png"],
     "description": "Koshi Tappu Wildlife Reserve is a birdwatcher's paradise, home to rare bird species and vibrant wetlands."
   }
 ]
