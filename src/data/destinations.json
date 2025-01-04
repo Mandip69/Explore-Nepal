@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "name": "Kathmandu",
+    "region": "Bagmati",
+    "rating": 4.5,
+    "images": ["/images/Kath.png", "/images/kath2.png",
+    "/images/kath3.png"],
+    "description": "Kathmandu, the capital of Nepal, is a vibrant city known for its cultural heritage, ancient temples, and bustling streets. It's a gateway to the Himalayas and a treasure trove of history and culture."
+  },
+  {
+    "id": 2,
+    "name": "Pokhara",
+    "region": "Gandaki",
+    "rating": 4.7,
+    "images": ["/images/Pokhara.png"],
+    "description": "Pokhara, often called the 'City of Lakes,' is a popular destination for its stunning views of the Annapurna range, serene lakes, and adventure activities like paragliding."
+  },
+  {
+    "id": 3,
+    "name": "Lumbini",
+    "region": "Lumbini",
+    "rating": 4.6,
+    "images": ["/images/lumbini.png"],
+    "description": "Lumbini is the birthplace of Lord Buddha and a UNESCO World Heritage Site. It is a serene and spiritual destination with monasteries and sacred gardens."
+  },
+  {
+    "id": 4,
+    "name": "Chitwan National Park",
+    "region": "Chitwan",
+    "rating": 4.8,
+    "images": ["/images/Chitwan.png"],
+    "description": "Chitwan National Park is a wildlife haven, home to Bengal tigers, one-horned rhinos, and exotic bird species. Jungle safaris and canoe rides are major attractions."
+  },
+  {
+    "id": 5,
+    "name": "Bhaktapur",
+    "region": "Bagmati",
+    "rating": 4.6,
+    "images": ["/images/Bhaktapur.png"],
+    "description": "Bhaktapur, known as the 'City of Devotees,' boasts well-preserved medieval architecture, narrow streets, and beautiful squares like Durbar Square."
+  },
+  {
+    "id": 6,
+    "name": "Patan Durbar Square",
+    "region": "Bagmati",
+    "rating": 4.7,
+    "images": ["/images/Patan.png"],
+    "description": "Patan Durbar Square is a UNESCO World Heritage Site featuring ancient palaces, intricate temples, and rich craftsmanship reflecting Nepal's rich history."
+  },
+  {
+    "id": 7,
+    "name": "Nagarkot",
+    "region": "Bagmati",
+    "rating": 4.4,
+    "images": ["/images/Nagarkot.png"],
+    "description": "Nagarkot is a hill station near Kathmandu offering panoramic views of the Himalayas, including Mount Everest, especially during sunrise and sunset."
+  },
+  {
+    "id": 8,
+    "name": "Gosaikunda",
+    "region": "Langtang",
+    "rating": 4.9,
+    "images": ["/images/Gosaikunda.png"],
+    "description": "Gosaikunda is a sacred alpine lake located in the Langtang National Park, attracting pilgrims and trekkers with its natural beauty and tranquility."
+  },
+  {
+    "id": 9,
+    "name": "Annapurna Base Camp",
+    "region": "Gandaki",
+    "rating": 4.9,
+    "images": ["/images/a.png"],
+    "description": "Annapurna Base Camp is a breathtaking trekking destination, offering close-up views of Annapurna and Machhapuchhre peaks amidst lush landscapes."
+  },
+  {
+    "id": 10,
+    "name": "Sagarmatha National Park",
+    "region": "Solukhumbu",
+    "rating": 5.0,
+    "images": ["/images/s.png"],
+    "description": "Sagarmatha National Park is home to Mount Everest, pristine glaciers, and Sherpa culture. It's a paradise for trekkers and mountaineers."
+  },
+  {
+    "id": 11,
+    "name": "Janakpur",
+    "region": "Madhesh",
+    "rating": 4.2,
+    "images": ["/images/j.png"],
+    "description": "Janakpur is a historic city and the birthplace of Goddess Sita. It is known for the Janaki Mandir and its rich Maithili culture."
+  },
+  {
+    "id": 12,
+    "name": "Ilam",
+    "region": "Province No. 1",
+    "rating": 4.7,
+    "images": ["/images/il.png"],
+    "description": "Ilam is a picturesque hill station famous for its lush tea gardens, scenic landscapes, and tranquil environment."
+  },
+  {
+    "id": 13,
+    "name": "Bandipur",
+    "region": "Gandaki",
+    "rating": 4.5,
+    "images": ["/images/ba.png"],
+    "description": "Bandipur is a charming hilltop town known for its preserved Newari culture, traditional architecture, and panoramic mountain views."
+  },
+  {
+    "id": 14,
+    "name": "Rara Lake",
+    "region": "Karnali",
+    "rating": 5.0,
+    "images": ["/images/ra.png"],
+    "description": "Rara Lake, the largest lake in Nepal, is a hidden gem surrounded by pristine wilderness, offering peace and stunning natural beauty."
+  },
+  {
+    "id": 15,
+    "name": "Poon Hill",
+    "region": "Gandaki",
+    "rating": 4.8,
+    "images": ["/images/po.png"],
+    "description": "Poon Hill is a popular trekking destination providing spectacular sunrise views of the Annapurna and Dhaulagiri mountain ranges."
+  },
+  {
+    "id": 16,
+    "name": "Dhulikhel",
+    "region": "Bagmati",
+    "rating": 4.3,
+    "images": ["/images/du.png"],
+    "description": "Dhulikhel is a peaceful town offering panoramic views of the Himalayas, historic temples, and opportunities for hiking."
+  },
+  {
+    "id": 17,
+    "name": "Tansen",
+    "region": "Lumbini",
+    "rating": 4.4,
+    "images": ["/images/ta.png"],
+    "description": "Tansen, a historic town in Palpa, is known for its traditional Newari culture, cobblestone streets, and panoramic mountain views."
+  },
+  {
+    "id": 18,
+    "name": "Manang",
+    "region": "Gandaki",
+    "rating": 4.9,
+    "images": ["/images/ma.png"],
+    "description": "Manang is a stunning mountain town on the Annapurna Circuit, offering breathtaking landscapes and unique Tibetan-influenced culture."
+  },
+  {
+    "id": 19,
+    "name": "Dhorpatan Hunting Reserve",
+    "region": "Dhaulagiri",
+    "rating": 4.6,
+    "images": ["/images/do.png"],
+    "description": "Dhorpatan Hunting Reserve is Nepal's only hunting reserve, known for its diverse wildlife and scenic alpine meadows."
+  },
+  {
+    "id": 20,
+    "name": "Koshi Tappu Wildlife Reserve",
+    "region": "Province No. 1",
+    "rating": 4.5,
+    "images": ["/images/Ko.png"],
+    "description": "Koshi Tappu Wildlife Reserve is a birdwatcher's paradise, home to rare bird species and vibrant wetlands."
+  }
+]
