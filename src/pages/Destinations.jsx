@@ -65,6 +65,7 @@ const Destinations = () => {
             region={destination.region}
             rating={destination.rating}
             image={destination.images[0]}
+            type={destination.type}
           />
         ))}
       </div>
