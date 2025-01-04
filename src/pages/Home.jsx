@@ -30,6 +30,7 @@ const Home = () => {
               rating={destination.rating}
               image={destination.images[0]}
               type={destination.type}
+              popularity={destination.popularity}
             />
           ))}
         </div>

@@ -39,6 +39,7 @@ const DestinationDetails = () => {
           </p>
           <p className="text-gray-700 mt-4">{destination.description}</p>
           <p className="text-gray-700 mt-2">Type: {destination.type}</p>
+          <p className="text-gray-700 mt-2">Popularity: {destination.popularity}</p>
         </div>
       </div>
 

@@ -10,7 +10,7 @@ const Destinations = () => {
   const [sortBy, setSortBy] = useState("");
 
   const regions = [...new Set(destinationsData.map((dest) => dest.region))];
-  const types = ["Cultural", "Trekking", "Adventure"]; // Explicitly define the types
+  const types = ["Cultural", "Trekking", "Adventure"];
 
   const handleFilterChange = (filterType, value) => {
     if (filterType === "region") setRegionFilter(value);

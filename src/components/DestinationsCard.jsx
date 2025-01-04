@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const DestinationCard = ({ id, name, region, rating, image, type }) => {
+const DestinationCard = ({ id, name, region, rating, image, type,popularity}) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -18,6 +18,7 @@ const DestinationCard = ({ id, name, region, rating, image, type }) => {
       <p className="text-gray-600">{region}</p>
       <p className="text-yellow-500">Rating: {rating} ★</p>
       <p className="text-gray-600">Type: {type}</p>
+      <p className="text-gray-600">Popularity: {popularity}</p>
     </div>
   );
 };
