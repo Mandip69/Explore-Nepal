@@ -1,13 +1,68 @@
-import React from "react";
-import destinations from "../data/destinations.json";
+import React, { useState } from "react";
+import destinationsData from "../data/destinations.json";
 import DestinationCard from "../components/DestinationsCard";
+import Filters from "../components/Filters";
 
 const Destinations = () => {
+  const [filteredDestinations, setFilteredDestinations] = useState(destinationsData);
+  const [regionFilter, setRegionFilter] = useState("");
+  const [typeFilter, setTypeFilter] = useState("");
+  const [sortBy, setSortBy] = useState("");
+
+  const regions = [...new Set(destinationsData.map((dest) => dest.region))];
+  const types = [...new Set(destinationsData.map((dest) => dest.type))];
+
+  const handleFilterChange = (filterType, value) => {
+    if (filterType === "region") setRegionFilter(value);
+    if (filterType === "type") setTypeFilter(value);
+  };
+
+  const handleSortChange = (e) => {
+    setSortBy(e.target.value);
+  };
+
+  const applyFiltersAndSorting = () => {
+    let result = destinationsData;
+
+    // Filter by Region
+    if (regionFilter) {
+      result = result.filter((dest) => dest.region === regionFilter);
+    }
+
+    // Filter by Type
+    if (typeFilter) {
+      result = result.filter((dest) => dest.type === typeFilter);
+    }
+
+    // Sort by Rating
+    if (sortBy === "rating") {
+      result = [...result].sort((a, b) => b.rating - a.rating);
+    }
+
+    return result;
+  };
+
+  React.useEffect(() => {
+    const updatedDestinations = applyFiltersAndSorting();
+    setFilteredDestinations(updatedDestinations);
+  }, [regionFilter, typeFilter, sortBy]);
+
   return (
     <div className="container mx-auto mt-8">
       <h2 className="text-2xl font-bold mb-4">All Destinations</h2>
+
+      {/* Filters and Sorting */}
+      <div className="flex justify-between items-center mb-4">
+        <Filters regions={regions} types={types} onFilterChange={handleFilterChange} />
+        <select className="border p-2" onChange={handleSortChange}>
+          <option value="">Sort By</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+
+      {/* Destinations Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {destinations.map((destination) => (
+        {filteredDestinations.map((destination) => (
           <DestinationCard
             key={destination.id}
             id={destination.id}
