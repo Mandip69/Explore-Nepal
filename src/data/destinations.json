@@ -17,7 +17,7 @@
     "images": ["/images/Pokhara.png", "/images/po1.jpeg", "/images/po2.jpeg"],
     "description": "Pokhara, often called the 'City of Lakes,' is a popular destination for its stunning views of the Annapurna range, serene lakes, and adventure activities like paragliding.",
     "activities": ["Paragliding over Phewa Lake", "Boating on Phewa Lake", "Visit Davis Falls"],
-    "type": ["Adventure", "Cultural"]
+    "type": ["Adventure"]
   },
   {
     "id": 3,
@@ -37,7 +37,7 @@
     "images": ["/images/Chitwan.png", "/images/ch1.jpeg", "/images/ch2.jpeg"],
     "description": "Chitwan National Park is a wildlife haven, home to Bengal tigers, one-horned rhinos, and exotic bird species. Jungle safaris and canoe rides are major attractions.",
     "activities": ["Jungle Safari", "Canoeing on Rapti River", "Visit Tharu Cultural Museum"],
-    "type": ["Adventure", "Cultural"]
+    "type": ["Adventure"]
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@
     "images": ["/images/Nagarkot.png", "/images/na1.jpeg", "/images/na2.jpeg"],
     "description": "Nagarkot is a hill station near Kathmandu offering panoramic views of the Himalayas, including Mount Everest, especially during sunrise and sunset.",
     "activities": ["Hiking in Nagarkot trails", "Watch sunrise over the Himalayas", "Mountain biking"],
-    "type": ["Adventure", "Trekking"]
+    "type": ["Adventure"]
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "images": ["/images/Gosaikunda.png", "/images/go1.jpg", "/images/go3.png"],
     "description": "Gosaikunda is a sacred alpine lake located in the Langtang National Park, attracting pilgrims and trekkers with its natural beauty and tranquility.",
     "activities": ["Trekking to Gosaikunda", "Pilgrimage to the sacred lake", "Explore Langtang National Park"],
-    "type": ["Trekking", "Cultural"]
+    "type": ["Trekking"]
   },
   {
     "id": 9,
@@ -97,11 +97,11 @@
     "images": ["/images/s.png", "/images/sa1.jpeg", "/images/sa2.jpeg"],
     "description": "Sagarmatha National Park is home to Mount Everest, pristine glaciers, and Sherpa culture. It's a paradise for trekkers and mountaineers.",
     "activities": ["Trek to Everest Base Camp", "Explore Sherpa villages", "Visit Tengboche Monastery"],
-    "type": ["Trekking", "Cultural"]
+    "type": ["Trekking"]
   },
   {
     "id": 11,
-    "name": "Janakpur",
+    "name": "Janakpur Temple",
     "region": "Madhesh",
     "rating": 4.2,
     "images": ["/images/j.png", "/images/ja1.jpeg", "/images/ja2.jpeg"],
@@ -137,7 +137,7 @@
     "images": ["/images/ra.png", "/images/ra1.jpeg", "/images/ra2.jpeg"],
     "description": "Rara Lake, the largest lake in Nepal, is a hidden gem surrounded by pristine wilderness, offering peace and stunning natural beauty.",
     "activities": ["Boating on Rara Lake", "Trekking in Rara National Park", "Photography of the lake and wildlife"],
-    "type": ["Trekking", "Adventure"]
+    "type": [ "Adventure"]
   },
   {
     "id": 15,
@@ -157,7 +157,7 @@
     "images": ["/images/du.png", "/images/du1.jpeg", "/images/du2.jpeg"],
     "description": "Dhulikhel is a peaceful town offering panoramic views of the Himalayas, historic temples, and opportunities for hiking.",
     "activities": ["Hiking in Dhulikhel trails", "Visit Namobuddha Monastery", "Explore local markets"],
-    "type": ["Cultural", "Adventure"]
+    "type": ["Adventure"]
   },
   {
     "id": 17,
@@ -177,7 +177,7 @@
     "images": ["/images/ma.png", "/images/ma1.jpeg", "/images/ma2.jpeg"],
     "description": "Manang is a stunning mountain town on the Annapurna Circuit, offering breathtaking landscapes and unique Tibetan-influenced culture.",
     "activities": ["Trek the Annapurna Circuit", "Visit Gangapurna Lake", "Explore Tibetan monasteries"],
-    "type": ["Trekking", "Cultural"]
+    "type": ["Trekking"]
   },
   {
     "id": 19,
@@ -187,7 +187,7 @@
     "images": ["/images/do.png", "/images/do1.jpeg", "/images/do2.jpg"],
     "description": "Dhorpatan Hunting Reserve is Nepal's only hunting reserve, known for its diverse wildlife and scenic alpine meadows.",
     "activities": ["Wildlife spotting", "Trekking in the reserve", "Photography of alpine landscapes"],
-    "type": ["Adventure", "Trekking"]
+    "type": ["Adventure"]
   },
   {
     "id": 20,

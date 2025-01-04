@@ -10,7 +10,7 @@ const Destinations = () => {
   const [sortBy, setSortBy] = useState("");
 
   const regions = [...new Set(destinationsData.map((dest) => dest.region))];
-  const types = [...new Set(destinationsData.map((dest) => dest.type))];
+  const types = ["Cultural", "Trekking", "Adventure"]; // Explicitly define the types
 
   const handleFilterChange = (filterType, value) => {
     if (filterType === "region") setRegionFilter(value);
@@ -27,6 +27,11 @@ const Destinations = () => {
     // Filter by Region
     if (regionFilter) {
       result = result.filter((dest) => dest.region === regionFilter);
+    }
+
+    // Filter by Type
+    if (typeFilter) {
+      result = result.filter((dest) => dest.type.includes(typeFilter));
     }
 
     // Sort by Rating
@@ -46,7 +51,6 @@ const Destinations = () => {
     <div className="container mx-auto mt-8">
       <h2 className="text-2xl font-bold mb-4">All Destinations</h2>
 
-    
       <div className="flex justify-between items-center mb-4">
         <Filters regions={regions} types={types} onFilterChange={handleFilterChange} />
         <select className="border p-2" onChange={handleSortChange}>
@@ -55,7 +59,6 @@ const Destinations = () => {
         </select>
       </div>
 
-   
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {filteredDestinations.map((destination) => (
           <DestinationCard
