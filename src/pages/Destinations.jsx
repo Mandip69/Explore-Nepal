@@ -29,11 +29,6 @@ const Destinations = () => {
       result = result.filter((dest) => dest.region === regionFilter);
     }
 
-    // Filter by Type
-    if (typeFilter) {
-      result = result.filter((dest) => dest.type === typeFilter);
-    }
-
     // Sort by Rating
     if (sortBy === "rating") {
       result = [...result].sort((a, b) => b.rating - a.rating);
@@ -51,7 +46,7 @@ const Destinations = () => {
     <div className="container mx-auto mt-8">
       <h2 className="text-2xl font-bold mb-4">All Destinations</h2>
 
-      {/* Filters and Sorting */}
+    
       <div className="flex justify-between items-center mb-4">
         <Filters regions={regions} types={types} onFilterChange={handleFilterChange} />
         <select className="border p-2" onChange={handleSortChange}>
@@ -60,7 +55,7 @@ const Destinations = () => {
         </select>
       </div>
 
-      {/* Destinations Grid */}
+   
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {filteredDestinations.map((destination) => (
           <DestinationCard

@@ -1,7 +1,7 @@
 import React from "react";
 import destinations from "../data/destinations.json";
 import DestinationCard from "../components/DestinationsCard";
-// import Nepal from "../images/Nepal.jpeg";
+
 
 const Home = () => {
   return (
