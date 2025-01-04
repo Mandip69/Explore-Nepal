@@ -13,7 +13,7 @@ const DestinationDetails = () => {
 
   return (
     <div className="container mx-auto mt-8 p-4">
-      {/* Back Button */}
+     
       <button
         onClick={() => navigate(-1)}
         className="bg-blue-500 text-white px-4 py-2 rounded-lg mb-4"
@@ -21,7 +21,7 @@ const DestinationDetails = () => {
         ← Back
       </button>
 
-      {/* Destination Overview */}
+   
       <div className="flex flex-col md:flex-row gap-4">
         <img
           src={destination.images[0]}
@@ -42,7 +42,7 @@ const DestinationDetails = () => {
         </div>
       </div>
 
-      {/* Images Section */}
+      
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-4">Images</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -57,7 +57,7 @@ const DestinationDetails = () => {
         </div>
       </div>
 
-      {/* Popular Activities Section */}
+     
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-4">Popular Activities</h2>
         <ul className="list-disc list-inside">
@@ -73,7 +73,6 @@ const DestinationDetails = () => {
         </ul>
       </div>
 
-      {/* User Reviews Section */}
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-4">User Reviews</h2>
         <div className="bg-gray-100 p-4 rounded-lg space-y-4">

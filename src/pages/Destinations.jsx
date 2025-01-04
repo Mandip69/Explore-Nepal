@@ -24,17 +24,17 @@ const Destinations = () => {
   const applyFiltersAndSorting = () => {
     let result = destinationsData;
 
-    // Filter by Region
+
     if (regionFilter) {
       result = result.filter((dest) => dest.region === regionFilter);
     }
 
-    // Filter by Type
+  
     if (typeFilter) {
       result = result.filter((dest) => dest.type.includes(typeFilter));
     }
 
-    // Sort by Rating
+    
     if (sortBy === "rating") {
       result = [...result].sort((a, b) => b.rating - a.rating);
     }
