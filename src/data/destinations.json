@@ -198,5 +198,16 @@
     "description": "Koshi Tappu Wildlife Reserve is a birdwatcher's paradise, home to rare bird species and vibrant wetlands.",
     "activities": ["Birdwatching", "Boating in wetlands", "Explore the wildlife reserve"],
     "type": ["Adventure"]
+  },
+  {
+    "id": 21,
+    "name": "Mustang",
+    "region": "Gandaki Province",
+    "rating": 4.8,
+    "images": ["/images/Mustang1.png", "/images/Mustang2.png", "/images/Mustang3.png"],
+    "description": "Mustang, known as the 'Land Beyond the Himalayas,' offers stunning landscapes, ancient caves, and unique Tibetan culture.",
+    "activities": ["Trekking in the Himalayas", "Explore ancient caves", "Visit monasteries and cultural sites"],
+    "type": ["Adventure",  "Cultural"]
   }
+  
 ]
