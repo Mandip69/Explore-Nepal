@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import destinations from "../data/destinations.json";
 import DestinationCard from "../components/DestinationsCard";
 
 const Home = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   return (
     <div>
       {/* Hero Section */}
@@ -39,7 +42,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Adventure Activities Section */}
+      {/* Adventure Awaits Section */}
       <section className="bg-gray-100 py-8">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Adventure Awaits</h2>
@@ -66,7 +69,7 @@ const Home = () => {
         </div>
       </section>
 
-     
+      {/* Visitor Testimonials */}
       <section className="bg-white py-8">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">What Our Visitors Say</h2>
@@ -87,16 +90,19 @@ const Home = () => {
         </div>
       </section>
 
-     
+      {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-green-400 to-blue-500 py-10 text-white text-center">
         <h2 className="text-3xl font-bold">Plan Your Adventure Today</h2>
         <p className="mt-4">Don't miss out on the journey of a lifetime.</p>
-        <button className="mt-6 px-6 py-2 bg-white text-green-500 font-semibold rounded-md shadow-md">
+        <button
+          className="mt-6 px-6 py-2 bg-white text-green-500 font-semibold rounded-md shadow-md"
+          onClick={() => navigate("/contact")} // Navigate to "Contact Us" page
+        >
           Explore More
         </button>
       </section>
 
-     
+      {/* Newsletter Section */}
       <section className="bg-gray-100 py-8">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Stay Updated</h2>

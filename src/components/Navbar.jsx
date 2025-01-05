@@ -8,7 +8,6 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo with Image */}
         <div className="flex items-center space-x-2">
           <img
             src={Logo}
@@ -18,7 +17,7 @@ const Navbar = () => {
           <h1 className="text-xl font-bold">Explore Nepal</h1>
         </div>
 
-        {/* Hamburger Menu for Mobile */}
+       {/* hamburger section  */}
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -40,8 +39,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-
-        {/* Desktop Menu */}
+     {/* Navbar section  */}
         <div className="hidden md:flex space-x-4">
           <NavLink to="/" className="hover:text-yellow-500">
             Home
@@ -58,7 +56,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+    
       {isMenuOpen && (
         <div className="md:hidden mt-2 space-y-2">
           <NavLink

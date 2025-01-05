@@ -23,17 +23,15 @@ const Destinations = () => {
   const [filteredDestinations, setFilteredDestinations] = useState(destinationsData);
   const [regionFilter, setRegionFilter] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
-  // const [popularityFilter, setPopularityFilter] = useState("");
   const [sortBy, setSortBy] = useState("");
 
   const regions = [...new Set(destinationsData.map((dest) => dest.region))];
   const types = ["Cultural", "Trekking", "Adventure"];
-  // const popularities = ["Highly Popular", "Very Popular", "Popular", "Moderately Popular"];
 
   const handleFilterChange = (filterType, value) => {
     if (filterType === "region") setRegionFilter(value);
     if (filterType === "type") setTypeFilter(value);
-    // if (filterType === "popularity") setPopularityFilter(value);
+   
   };
 
   const handleSortChange = (e) => {
@@ -53,11 +51,6 @@ const Destinations = () => {
       result = result.filter((dest) => dest.type.includes(typeFilter));
     }
 
-    // Apply popularity filter
-    // if (popularityFilter) {
-    //   result = result.filter((dest) => dest.popularity === popularityFilter);
-    // }
-
     // Apply sorting
     if (sortBy === "rating") {
       result = [...result].sort((a, b) => b.rating - a.rating);
@@ -74,14 +67,14 @@ const Destinations = () => {
   }, [regionFilter, typeFilter, sortBy]);
 
   return (
+    // All destation section
     <div className="container mx-auto mt-8">
       <h2 className="text-2xl font-bold mb-4">All Destinations</h2>
-
+      {/* Fliter Section  */}
       <div className="flex justify-between items-center mb-4">
         <Filters
           regions={regions}
           types={types}
-          // popularity={popularities}
           onFilterChange={handleFilterChange}
         />
         <select className="border p-2" onChange={handleSortChange}>
@@ -90,7 +83,7 @@ const Destinations = () => {
           <option value="popularity">Popularity</option>
         </select>
       </div>
-
+      {/* Destation map section  */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {filteredDestinations.map((destination) => (
           <DestinationCard

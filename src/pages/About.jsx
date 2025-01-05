@@ -8,13 +8,13 @@ import Treking from '../images/Treking.jpeg';
 const About = () => {
   return (
     <div className="container mx-auto mt-8 px-4">
-   
+       {/* ABout nepal section  */}
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800">About Nepal</h1>
         <p className="mt-2 text-lg text-gray-600">Discover the beauty, culture, and history of Nepal.</p>
       </div>
 
-      
+      {/* History and Culture section  */}
       <section className="mt-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -33,6 +33,7 @@ const About = () => {
         </div>
       </section>
 
+      {/* Geography Section  */}
       <section className="mt-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <img
@@ -50,7 +51,7 @@ const About = () => {
         </div>
       </section>
 
-   
+     {/* Popular travel section  */}
       <section className="mt-12">
         <h2 className="text-2xl font-semibold text-gray-800 text-center">Popular Travel Activities</h2>
         <div className="grid md:grid-cols-3 gap-8 mt-8">

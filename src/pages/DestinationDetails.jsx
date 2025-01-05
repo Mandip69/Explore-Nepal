@@ -11,23 +11,28 @@ const DestinationDetails = () => {
     return <h1 className="text-center mt-8">Destination not found</h1>;
   }
 
+  const reviews = [
+    { name: "Ram", comment: "This destination is absolutely breathtaking! A must-visit!", rating: 5 },
+    { name: "Hari", comment: "Amazing experience, especially the cultural activities.", rating: 4 },
+    { name: "Sita", comment: "I loved the scenic beauty and peaceful atmosphere.", rating: 4 },
+  ];
+
   return (
     <div className="container mx-auto mt-8 p-4">
-     
       <button
         onClick={() => navigate(-1)}
         className="bg-blue-500 text-white px-4 py-2 rounded-lg mb-4"
       >
         ← Back
       </button>
-
-   
+      {/* Destation details Section  */}
       <div className="flex flex-col md:flex-row gap-4">
         <img
           src={destination.images[0]}
           alt={destination.name}
           className="w-full md:w-1/2 h-64 object-cover rounded-lg"
         />
+      
         <div>
           <h1 className="text-3xl font-bold">{destination.name}</h1>
           <p className="text-gray-600">{destination.region}</p>
@@ -42,8 +47,7 @@ const DestinationDetails = () => {
           <p className="text-gray-700 mt-2">Popularity: {destination.popularity}</p>
         </div>
       </div>
-
-      
+       {/* Image section  */}
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-4">Images</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -57,8 +61,7 @@ const DestinationDetails = () => {
           ))}
         </div>
       </div>
-
-     
+          {/* Popular Activity Section  */}
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-4">Popular Activities</h2>
         <ul className="list-disc list-inside">
@@ -73,19 +76,21 @@ const DestinationDetails = () => {
           )}
         </ul>
       </div>
-
+           {/* Hard user section  */}
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-4">User Reviews</h2>
         <div className="bg-gray-100 p-4 rounded-lg space-y-4">
-          <p className="text-gray-700">
-            <strong>Ram:</strong> This destination is absolutely breathtaking! A must-visit!
-          </p>
-          <p className="text-gray-700">
-            <strong>Hari:</strong> Amazing experience, especially the cultural activities.
-          </p>
-          <p className="text-gray-700">
-            <strong>Sita:</strong> I loved the scenic beauty and peaceful atmosphere.
-          </p>
+          {reviews.map((review, index) => (
+            <div key={index} className="flex flex-col">
+              <p className="text-gray-700">
+                <strong>{review.name}:</strong> {review.comment}
+              </p>
+              <p className="text-yellow-500">
+                {"★".repeat(Math.floor(review.rating))}
+                {review.rating % 1 !== 0 && "½"}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

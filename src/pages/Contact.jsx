@@ -5,7 +5,7 @@ import ContactImage from '../images/Contact.png';
 function Contact() {
   return (
     <div className="container mx-auto mt-8 px-4">
-    
+    {/* Contact us section  */}
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800">Contact Us</h1>
         <p className="mt-2 text-lg text-gray-600">
@@ -13,7 +13,7 @@ function Contact() {
         </p>
       </div>
 
-  
+      {/* Location Section  */}
       <section className="mt-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -36,6 +36,7 @@ function Contact() {
         </div>
       </section>
 
+      {/* Contact Form Section  */}
       <section className="mt-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <img

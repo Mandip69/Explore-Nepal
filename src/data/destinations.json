@@ -123,7 +123,7 @@
   {
     "id": 12,
     "name": "Ilam",
-    "region": "Province No. 1",
+    "region": "Khosi",
     "rating": 4.7,
     "popularity": "Very Popular",
     "images": ["/images/il.png", "/images/ii1.jpeg", "/images/ii2.jpeg"],
@@ -211,7 +211,7 @@
   {
     "id": 20,
     "name": "Koshi Tappu Wildlife Reserve",
-    "region": "Province No. 1",
+    "region": "Khosi",
     "rating": 4.5,
     "popularity": "Popular",
     "images": ["/images/Kho1.jpeg", "/images/kho2.jpg", "/images/Kho3.png"],
