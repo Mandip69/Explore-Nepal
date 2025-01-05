@@ -1,4 +1,4 @@
-const Filters = ({ regions, types, popularity, onFilterChange }) => (
+const Filters = ({ regions, types, onFilterChange }) => (
   <div className="flex gap-4">
     <select className="border p-2" onChange={(e) => onFilterChange("region", e.target.value)}>
       <option value="">All Regions</option>
@@ -12,12 +12,7 @@ const Filters = ({ regions, types, popularity, onFilterChange }) => (
         <option key={type} value={type}>{type}</option>
       ))}
     </select>
-    <select className="border p-2" onChange={(e) => onFilterChange("popularity", e.target.value)}>
-      <option value="">All Popularity</option>
-      {popularity.map((pop) => (
-        <option key={pop} value={pop}>{pop}</option>
-      ))}
-    </select>
+    
   </div>
 );
 

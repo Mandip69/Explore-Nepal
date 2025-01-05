@@ -23,17 +23,17 @@ const Destinations = () => {
   const [filteredDestinations, setFilteredDestinations] = useState(destinationsData);
   const [regionFilter, setRegionFilter] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
-  const [popularityFilter, setPopularityFilter] = useState("");
+  // const [popularityFilter, setPopularityFilter] = useState("");
   const [sortBy, setSortBy] = useState("");
 
   const regions = [...new Set(destinationsData.map((dest) => dest.region))];
   const types = ["Cultural", "Trekking", "Adventure"];
-  const popularities = ["Highly Popular", "Very Popular", "Popular", "Moderately Popular"];
+  // const popularities = ["Highly Popular", "Very Popular", "Popular", "Moderately Popular"];
 
   const handleFilterChange = (filterType, value) => {
     if (filterType === "region") setRegionFilter(value);
     if (filterType === "type") setTypeFilter(value);
-    if (filterType === "popularity") setPopularityFilter(value);
+    // if (filterType === "popularity") setPopularityFilter(value);
   };
 
   const handleSortChange = (e) => {
@@ -54,9 +54,9 @@ const Destinations = () => {
     }
 
     // Apply popularity filter
-    if (popularityFilter) {
-      result = result.filter((dest) => dest.popularity === popularityFilter);
-    }
+    // if (popularityFilter) {
+    //   result = result.filter((dest) => dest.popularity === popularityFilter);
+    // }
 
     // Apply sorting
     if (sortBy === "rating") {
@@ -71,7 +71,7 @@ const Destinations = () => {
   React.useEffect(() => {
     const updatedDestinations = applyFiltersAndSorting();
     setFilteredDestinations(updatedDestinations);
-  }, [regionFilter, typeFilter, popularityFilter, sortBy]);
+  }, [regionFilter, typeFilter, sortBy]);
 
   return (
     <div className="container mx-auto mt-8">
@@ -81,7 +81,7 @@ const Destinations = () => {
         <Filters
           regions={regions}
           types={types}
-          popularity={popularities}
+          // popularity={popularities}
           onFilterChange={handleFilterChange}
         />
         <select className="border p-2" onChange={handleSortChange}>
