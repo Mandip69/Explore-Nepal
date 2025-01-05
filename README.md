@@ -63,7 +63,7 @@ Explore Nepal is a multi-page travel website designed to showcase the beauty and
 
 5. Open your browser and navigate to:
    ```
-   http://localhost:3000
+   http://localhost:5173/
    ```
 
 ## Deployment
